@@ -1,3 +1,5 @@
+
+
 package com.stockinformation.stock;
 
 import java.util.ArrayList;
@@ -35,7 +37,7 @@ public class Response {
 	public void setMetadata(MetadataResponse metadata) {
 		this.metadata = metadata;
 	}
-	
+	/*Method to iterate the response and extract each time series object*/
 	@SuppressWarnings("unchecked")
 	public static Response build(JSONObject raw) throws JSONException {
 		Response resp = new Response();
